@@ -1,0 +1,745 @@
+* * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img,
+i {
+  vertical-align: middle !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+div,
+li,
+span,
+img {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary_bgColor: #1c1e53;
+  --button_color: #fcd980;
+  --link_color: #2405f2;
+  --secondary_textColor: #282938;
+  --secondary_bgColor: #f4f6fc;
+  --white: #fff;
+}
+/* ====================================================
+                 nav_part  css start here
+======================================================= */
+nav {
+  background-color: var(--primary_bgColor);
+}
+.nav-link {
+  color: var(--White, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.button {
+  color: var(--White, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 16px 48px;
+  background-color: transparent;
+  border-radius: 41px;
+  -webkit-border-radius: 41px;
+  -moz-border-radius: 41px;
+  -ms-border-radius: 41px;
+  -o-border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.button:hover {
+  background: var(--white);
+  color: var(--primary_bgColor);
+  border: 2px solid rgba(244, 246, 252, 0.2);
+}
+
+/* ====================================================
+                 nav_part  css end here
+=======================================================
+/* ====================================================
+                 banner_part  css start here
+======================================================= */
+#banner_part {
+  padding: 100px 0;
+  background-color: var(--primary_bgColor);
+}
+.bannerText__title {
+  color: var(--White, #fff);
+  font-size: 54px;
+  font-weight: 600;
+}
+.bannerText__summary {
+  color: var(--White, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.view__btn {
+  color: #1b1c2b;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 13px 26px;
+  background-color: var(--button_color);
+  border-radius: 41px;
+  -webkit-border-radius: 41px;
+  -moz-border-radius: 41px;
+  -ms-border-radius: 41px;
+  -o-border-radius: 41px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  border: 1px solid transparent;
+}
+
+.view__btn:hover {
+  color: var(--white);
+  background-color: var(--primary_bgColor);
+  transform: translateY(-25%);
+  -webkit-transform: translateY(-25%);
+  -moz-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  -o-transform: translateY(-25%);
+  border: 1px solid var(--white);
+}
+
+.price__btn {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.price__btn:hover {
+  transform: translateY(-25%);
+  -webkit-transform: translateY(-25%);
+  -moz-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  -o-transform: translateY(-25%);
+}
+.arrows {
+  margin-left: 7px;
+  vertical-align: middle;
+}
+
+/* ====================================================
+                 banner_part  css end here
+======================================================= */
+
+/* ====================================================
+                 Work_part  css start here
+======================================================= */
+#work_part {
+  padding: 100px 0 40px;
+  background-color: var(--secondary_bgColor);
+}
+
+.workTextWrapper__title {
+  color: var(--secondary_textColor, #282938);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.workTextWrapper__summary {
+  color: var(--secondary_textColor);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.workTextWrapper__link {
+  color: #2405f2;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.workTextWrapper__link:hover {
+  color: var(--secondary_textColor);
+  transform: translateY(25%);
+  -webkit-transform: translateY(25%);
+  -moz-transform: translateY(25%);
+  -ms-transform: translateY(25%);
+  -o-transform: translateY(25%);
+}
+.work__icon {
+  margin-left: 5px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.workTextWrapper__link:hover .work__icon {
+  transform: translateX(30%);
+  -webkit-transform: translateX(30%);
+  -moz-transform: translateX(30%);
+  -ms-transform: translateX(30%);
+  -o-transform: translateX(30%);
+}
+
+.WorkBoxItem__title {
+  color: var(--secondary_textColor, #282938);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.WorkBoxItem__summary {
+  color: var(--secondary_textColor, #282938);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.7;
+}
+/* ====================================================
+                 Work_part  css end here
+======================================================= */
+
+/* ====================================================
+                 vies_part  css start here
+======================================================= */
+#view_part {
+  padding: 100px 0px;
+  background-color: var(--white);
+}
+.viewTextLeft__title {
+  color: var(--secondary_textColor, #282938);
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.viewTextRight__anchor {
+  color: var(--secondary_textColor);
+  font-size: 16px;
+  font-weight: 500;
+}
+.overlay {
+  width: 60%;
+  padding: 0px 50px;
+  background: linear-gradient(
+    329deg,
+    #1c1e53 -10.96%,
+    rgba(28, 30, 83, 0.42) 103.96%
+  );
+  top: 0;
+  left: -60%;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.viewImgleft:hover .overlay {
+  left: 0;
+}
+
+.overlay__two {
+  width: 100%;
+  top: -100%;
+  right: 0;
+  background: linear-gradient(
+    329deg,
+    #1c1e53 -10.96%,
+    rgba(28, 30, 83, 0.42) 103.96%
+  );
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.viewImgRight:hover .overlay__two {
+  top: 0;
+}
+
+.overlayTwoText {
+  top: 40%;
+  padding: 0 30px;
+}
+
+.overlay__title {
+  color: var(--white, #fff);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.overlayTwo__title {
+  margin-bottom: 10px;
+}
+
+.overlay__summary {
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  opacity: 0.8;
+}
+
+.overlay__anchor {
+  color: var(--button_color, #fcd980);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.ovelay__icon {
+  margin-left: 7px;
+}
+/* ====================================================
+                 view_part  css end here
+======================================================= */
+
+/* ====================================================
+                 Feature_part  css start here
+======================================================= */
+#feature_part {
+  padding: 80px 0 100px;
+  background: var(--secondary_bgColor);
+}
+
+.featureTextWrapper__subtitle {
+  color: var(--secondary_textColor, #282938);
+  font-size: 16px;
+  font-weight: 500;
+}
+.featureTextWrapper__title {
+  color: var(--secondary_textColor, #282938);
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 70px;
+}
+
+.featureBoxItem__title {
+  color: var(--secondary_textColor, #282938);
+  font-size: 20px;
+  font-weight: 500;
+}
+.featureBoxItem__summary {
+  color: var(--secondary_textColor, #282938);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.secondrow {
+  margin-top: 80px;
+}
+/* =
+===================================================
+                 Feature_part  css end here
+======================================================= */
+
+/* ====================================================
+                 Testimonial_part  css start here
+======================================================= */
+#testimonial_part {
+  padding: 50px 0 106px;
+  background-color: var(--secondary_bgColor);
+}
+.testimonialQuestion__title {
+  color: var(--secondary_textColor, #282938);
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.testimonialQuestion__summary {
+  color: var(--secondary_textColor, #282938);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+.testimonialAnswer__text {
+  color: var(--secondary_textColor, #282938);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.profileTitle__text {
+  color: var(--secondary_textColor, #282938);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.profileTitle__subtext {
+  color: var(--secondary_textColor, #282938);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* ====================================================
+                 Testimonial_part  css end here
+======================================================= */
+
+/* ====================================================
+                 Faq_part  css start here
+======================================================= */
+#faq_part {
+  padding: 100px 0;
+  background-color: #fff;
+}
+.FaqQuestion--title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--%3E%3Cpath d='M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z'/%3E%3C/svg%3E");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+}
+.accordian__count {
+  margin-right: 20px;
+}
+.accordian___title {
+  color: var(--secondary_textColor, #282938);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.accordian__count {
+  color: var(--secondary_textColor);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.accordianBody__summary {
+  color: var(--secondary_textColor, #282938);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* ====================================================
+                 faq_part  css end here
+======================================================= */
+/* ====================================================
+                 Form_part  css start here
+======================================================= */
+#form__part {
+  padding: 50px 0;
+  background-color: var(--white);
+}
+.formTextDiv {
+  background: url(../images/writing.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 96px;
+  padding-bottom: 205px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.FormTextDiv__title {
+  color: var(--white, #fff);
+  font-size: 58px;
+  font-weight: 600;
+}
+.FormTextDiv__summary {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.forminputDiv {
+  padding-top: 92px;
+  padding-bottom: 48px;
+  background-color: var(--primary_bgColor);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.forminputDiv__title {
+  color: var(--white);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.forminputDiv__summary {
+  color: var(--secondary_bgColor, #f4f6fc);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.Inputdiv {
+  width: 452px;
+  padding: 16px 0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: none;
+  padding-left: 22px;
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  color: #f4f6fc;
+  opacity: 0.5;
+  /* ============== cursor color========= */
+  caret-color: #f4f6fc;
+  /* ============== cursor color========= */
+}
+.Inputdiv::placeholder {
+  color: #f4f6fc;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.form__button {
+  color: #1b1c2b;
+  font-size: 18px;
+  font-weight: 600;
+  width: 452px;
+  padding: 16px 0;
+  border: none;
+  background-color: var(--button_color);
+  border-radius: 41px;
+  -webkit-border-radius: 41px;
+  -moz-border-radius: 41px;
+  -ms-border-radius: 41px;
+  -o-border-radius: 41px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  border: 1.5px solid transparent;
+}
+.form__button:hover {
+  color: #f4f6fc;
+  background-color: var(--primary_bgColor);
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+}
+.form__link {
+  color: var(--White, #fff);
+  font-size: 18px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+.form__link:hover {
+  transform: translateY(25%);
+  -webkit-transform: translateY(25%);
+  -moz-transform: translateY(25%);
+  -ms-transform: translateY(25%);
+  -o-transform: translateY(25%);
+}
+
+.form__icon {
+  margin-left: 7px;
+}
+/* ====================================================
+                 Form_part  css end here
+======================================================= */
+
+/* ====================================================
+                 blog_part  css start here
+======================================================= */
+#blog_part {
+  padding: 100px 0;
+  background-color: var(--white);
+}
+.blogTitle__text {
+  color: var(--secondary_textColor, #282938);
+  font-size: 42px;
+  font-weight: 600;
+}
+.blogItem__date {
+  color: var(--secondary_textColor, #282938);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.blogItem__subtitle {
+  color: var(--secondary_textColor, #282938);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.blogItem__summary {
+  color: var(--secondary_textColor, #282938);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.blogItem__link {
+  color: var(--secondary_textColor, #282938);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+.blogItem__link:hover {
+  transform: translateY(25%);
+  -webkit-transform: translateY(25%);
+  -moz-transform: translateY(25%);
+  -ms-transform: translateY(25%);
+  -o-transform: translateY(25%);
+  color: var(--link_color);
+}
+.blog_icon {
+  color: var(--secondary_textColor);
+  margin-left: 7px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+.blogItem:hover .blog_icon {
+  color: var(--link_color);
+}
+/* 175% */
+/* ====================================================
+                 blog_part  css end here
+======================================================= */
+/* ====================================================
+                 Footer_part  css start here
+======================================================= */
+#footer_part {
+  padding: 100px 0 0;
+  background-color: var(--primary_bgColor);
+}
+.footerRight__summary {
+  color: var(--White, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  opacity: 0.8;
+  margin-bottom: 66px;
+}
+.footerRight__contact {
+  padding: 20px 0px 16px 37px;
+  background-color: var(--button_color);
+}
+
+.Contact__title {
+  color: var(--secondary_textColor, #282938);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.email__title {
+  color: var(--secondary_textColor, #282938);
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.footerLeft__title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+}
+.footerLeft__summary {
+  color: var(--Grey, #f4f6fc);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.8;
+}
+.iconss {
+  margin-right: 25px;
+}
+
+#footer_bottom {
+  padding: 22px 0;
+  background-color: var(--white);
+}
+.copyright {
+  color: var(--secondary_textColor, #282938);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.wrapper__list {
+  margin-left: 30px;
+  color: var(--secondary_textColor, #282938);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ====================================================
+                 Footer_part  css end here
+======================================================= */
+/* ====================================================
+                 _part  css start here
+======================================================= */
+
+/* ====================================================
+                 _part  css end here
+======================================================= */
+
+/* ====================================================
+                 _part  css start here
+======================================================= */
+
+/* ====================================================
+                 _part  css end here
+======================================================= */
